@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>块级元素和行内元素</title>
+</head>
+<body>
+<!-- 以下为块级元素，独占一行 -->
+    <marquee>这是一个滚动文字</marquee>
+    <marquee>这是一个滚动文字</marquee>
+    <h1>这是一个标题</h1>
+    <h1>这是一个标题</h1>
+    <p>这是一个段落</p>
+    <p>这是一个段落</p>
+    <div>这是一个块级元素包裹</div>
+    <div>这是一个块级元素包裹</div>
+<!-- 以下为行内元素，不独占一行 -->
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+<!-- 块级元素中能写行内元素和块级元素，几乎什么都能写 -->
+<div>
+    <h1>这是一个标题</h1>
+    <p>这是一个段落</p>
+    <div>这是一个块级元素包裹</div>
+    <input type="text" name="" id="">
+    <span>dsadsadsadsa</span>
+</div>
+<!-- 行内元素中只能写行内元素，不可写块级元素 -->
+ <span>
+    <input type="text" name="" id="">
+    <span>dsadsadsadsa</span>
+ </span>
+<!-- h1-h6不可互相嵌套 -->
+<!-- p标签中不可嵌套块级元素 -->
+ <p>
+    <marquee>特殊</marquee>
+    <!-- 
+    marquee标签已经废弃以及不建议使用。仅作兼容性保留。
+    滚动效果以及其他效果可以使用CSS3的动画来实现。
+    并且 marquee标签在移动端的浏览器中不支持，建议使用CSS3动画来实现滚动效果。
+    css的效果更加丰富，兼容性更好，性能更高。
+    先前marquee的使用只作为学习的引子，此后不会再使用。
+    -->
+ </p>
+</body>
+</html>
